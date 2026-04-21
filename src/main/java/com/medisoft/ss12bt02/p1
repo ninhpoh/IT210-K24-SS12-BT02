@@ -1,15 +1,10 @@
-spring-boot-starter-web được gọi là một Starter vì nó là một gói phụ thuộc (dependency) tổng hợp,
-thay vì bạn phải tự khai báo từng thư viện riêng lẻ. Khi thêm Starter này, bạn sẽ có ngay:
+Trong Spring Boot, khi thêm các thư viện thuộc hệ sinh thái Spring (ví dụ: spring-boot-starter-validation, spring-boot-starter-web), ta thường không cần ghi rõ số phiên bản. Lý do là:
 
-Spring MVC (để xây dựng ứng dụng web và RESTful API).
+Spring Boot sử dụng Dependency Management thông qua Spring Boot BOM (Bill of Materials). BOM định nghĩa sẵn phiên bản tương thích cho tất cả các thư viện trong hệ sinh thái Spring.
 
-Embedded Tomcat (máy chủ web tích hợp, không cần cài đặt thủ công).
+Khi bạn khai báo một Starter, Gradle/Maven sẽ tự động lấy phiên bản phù hợp từ BOM, đảm bảo các thư viện không bị xung đột.
 
-Jackson (chuyển đổi JSON).
-
-Validation API (hỗ trợ kiểm tra dữ liệu đầu vào).
-
-Các cấu hình mặc định giúp ứng dụng chạy ngay mà không cần XML phức tạp.
+Điều này giúp bạn tránh tình trạng “version hell” – khi các dependency không khớp phiên bản gây lỗi build hoặc runtime.
 
 
 p2 là cấu hinh lai dependencies trong build.gradle nhưng trong quá trình tạo mới project co muc chon
