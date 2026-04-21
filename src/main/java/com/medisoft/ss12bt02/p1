@@ -1,0 +1,16 @@
+spring-boot-starter-web được gọi là một Starter vì nó là một gói phụ thuộc (dependency) tổng hợp,
+thay vì bạn phải tự khai báo từng thư viện riêng lẻ. Khi thêm Starter này, bạn sẽ có ngay:
+
+Spring MVC (để xây dựng ứng dụng web và RESTful API).
+
+Embedded Tomcat (máy chủ web tích hợp, không cần cài đặt thủ công).
+
+Jackson (chuyển đổi JSON).
+
+Validation API (hỗ trợ kiểm tra dữ liệu đầu vào).
+
+Các cấu hình mặc định giúp ứng dụng chạy ngay mà không cần XML phức tạp.
+
+
+p2 là cấu hinh lai dependencies trong build.gradle nhưng trong quá trình tạo mới project co muc chon
+dependencies nên tạo mới project
